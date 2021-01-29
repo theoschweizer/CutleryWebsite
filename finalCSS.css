@@ -1,0 +1,243 @@
+* { box-sizing: border-box; }
+header, nav, main, footer { display: block; }
+
+body { background-color: #FBFBFB; 
+       color: #221811;
+       font-family: Verdana,Arial, sans-serif;
+}
+header {  color: #FBFBFB;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  text-align: center;
+		  background-color: #595959;
+		  width: auto;	  
+}
+h1 { font-size: 4em;
+	 padding: 10px;
+}
+#logo { margin-top:5px;
+		height:145px;
+		width:350px;
+		margin-bottom:5px;
+}
+h4 { background-color: #e6e6e6;
+     font-size: 1.2em;
+	 padding-left:   .5em;   
+	 padding-bottom: .25em;  
+     text-transform: uppercase;
+     border-bottom: solid 2px #231814;
+	 padding-bottom: 0;
+	 clear: left;
+}
+nav { text-align: center; 
+      font-weight: bold; 
+	  font-size: 1.5em;
+	  padding-top: 1px;
+
+}
+nav ul { list-style-type: none;
+		 margin-left: 33%;
+		 padding: 0;
+		 overflow: hidden;
+}
+nav ul li { padding-bottom: 1em;
+			float: left;
+}
+nav ul li a { display: block;
+			  text-align: center;
+			  padding-right: 1.5em;
+			  text-decoration: none;
+}
+nav a:link { color: #595959; 
+}
+nav a:visited { color: #595959; 
+}
+nav a:hover { color: #8c8b8b; 
+}
+main { padding-left:1em;
+	   display: block;
+}
+main h2, main h3, main h4, main p, main div, main ul, main dl { padding-left: 3em; padding-right: 2em; 
+}
+#news { float:left;
+		width:25%;
+}
+video { float: right;
+		margin-right: 20px;
+		margin-left: 10px;
+		margin-top: 10px;
+}
+#bodytext { margin-left:30%;
+			background-color: #e6e6e6;
+			padding-top:1em;
+			padding-bottom:2%;
+}
+#cutleryset { float: left;
+			 width:385px; 
+			 background-image: url(cutleryset.jpg);
+			 background-size: 80% 80%;
+			 background-repeat: no-repeat; 
+			 height: 302px;
+			 margin-left: 40px;
+			 margin-top: 50px;
+}
+footer { background-color: #595959;
+		 font-size: .60em;
+	     font-style: italic;
+	     text-align: center;
+		 padding: 10px;
+		 color: #FBFBFB;
+}
+
+.details { padding-left: 20%;
+           padding-right: 20%;
+		   overflow: auto;
+}
+#mobile { display: none; 
+}
+#desktop { display: inline; 
+}
+dl { border: 1px solid #000000;
+	 font-family:Arial;
+	 padding:3px;
+	 width: 90%;
+}
+dl dt { font-weight: bold;
+}
+dl dd { font-size: 0.9em;
+}
+#pic { width:130px;
+	  height: 90px;
+}
+#thumbsup { float: left;
+			 width:420px; 
+			 background-image: url(thumbsup.jpg);
+			 background-size: 80% 80%;
+			 background-repeat: no-repeat; 
+			 height: 302px;
+			 margin-left: 20px;
+			 margin-top: 50px;
+}
+#forksupport { float: left;
+			 width:350px; 
+			 background-image: url(forksupport.jpg);
+			 background-size: 80% 80%;
+			 background-repeat: no-repeat; 
+			 height: 360px;
+			 margin-left: 50px;
+			 margin-top: 25px;
+}
+label { float: left;
+		display:block;
+		text-align:right;
+		width: 8em;
+		padding-right: 1em;
+}
+input{ display: block;
+	   margin-bottom: 1em;
+}
+ 
+textarea { display: block;
+		   margin-bottom: 1em;
+		   height: 5em;
+		   width: 20em;
+}
+table { margin: auto;
+		width: 90%;
+		border-spacing: 0;
+		background-color: #e6e6e6;
+		text-align:left;
+		}
+table td, table th { padding: 10px;
+}
+table th { width: 12em;
+		   padding-left: 2em;
+}
+table td { font-size: .9em;
+}
+table tr:nth-of-type(odd) { background-color: #ffffff;
+}
+#mySubmit { margin-left: 9.5em;
+}
+@media only screen and (max-width: 1024px) {
+	body { margin: 0;
+	       background-image: none; 
+	}
+	header { border-bottom: 5px solid #000000; 
+	}
+	h1 { margin-top: 0;
+	     margin-bottom: 1em;
+		 padding-top: 1em;
+		 padding-bottom: 1em;
+		 font-size: 2.5em; 
+	}
+	nav { float: none;
+	      width: auto;
+		  padding-top: 0;
+		  margin: 10px;
+		  font-size: 1.3em; 
+	}
+	nav li { display: inline-block; 
+	}
+	nav a { padding: 1em; 
+	        width: 8em; 
+		    font-weight: bold;
+		    border-style: none; 
+	}
+	nav ul { padding: 0; 
+			 margin: 0; 
+	}
+	#news { float:left;
+		width:25%;
+		font-size:1em;
+}
+	#weirdfork, #forksupport,#thumbsup,#cutleryset	{ margin: 0; 
+													  padding: 0; 
+													  background-size:60% 60%;
+	}
+	#bodytext { font-size: 1em;
+	}
+	main { margin: 0; font-size: 90%; 
+	}
+}
+@media only screen and (max-width: 768px) {
+	header {
+			 height: 128px; 
+	}
+	h1 { font-size: 2em;
+	     text-align: center;
+		 padding-left: 0; 
+	}
+	nav { margin: 0; 
+	}
+	nav a { display: block; 
+			padding: 0.2em;
+			width: auto; 
+	}
+	nav li { display: block; 
+	}
+	main { padding-top: 1px; 
+	}
+	h2 { padding: 0.5em 0 0 0.5em;
+		 margin-right: 0.5em; 
+	}
+	.details { padding-left: 0; 
+			   padding-right: 0; 
+	}
+	#weirdfork, #forksupport,#thumbsup,#cutleryset{ background-image: none; 
+				 height: auto; 
+	}
+	#news { float:left;
+			width:25%;
+			font-size:0.85em;
+}
+	#bodytext { font-size: 1em;
+	}
+	.floatleft { padding-left: 0.5em; 
+				 padding-right: 0.5em; 
+	}
+	#mobile { display: inline; 
+	}
+    #desktop { display: none; 
+	}
+}
